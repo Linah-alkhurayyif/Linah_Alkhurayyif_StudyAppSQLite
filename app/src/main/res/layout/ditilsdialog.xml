@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/londrinashadow_regular"
+            android:text="Update Note"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btn_Ok"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#4D745A"
+            android:text="ok"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

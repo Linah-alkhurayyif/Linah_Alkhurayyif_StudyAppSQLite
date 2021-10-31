@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Update Note"
+        android:fontFamily="@font/londrinashadow_regular"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_topics"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:paddingStart="10dp"
+        android:hint="Enter the topic"
+        android:background="@drawable/edittext_style"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+    <EditText
+        android:id="@+id/et_descriptions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter the description"
+        android:paddingStart="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/edittext_style"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_topics" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#4D745A"
+        android:text="save"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_descriptions" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

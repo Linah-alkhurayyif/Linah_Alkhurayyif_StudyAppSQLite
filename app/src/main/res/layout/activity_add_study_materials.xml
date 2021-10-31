@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudyMaterials"
+    android:background="#DADAD9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Study Materials"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/londrinashadow_regular"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/book" />
+
+        <EditText
+            android:id="@+id/topic_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Enter the topic"
+            android:paddingStart="15dp"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_style"/>
+
+        <EditText
+            android:id="@+id/description_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:hint="Enter the description"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D745A"
+                android:layout_marginRight="10dp"
+                android:text="back" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D745A"
+                android:layout_marginLeft="10dp"
+                android:text="save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
